@@ -1,39 +1,19 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>館林ベースボールクラブ | 中学軟式野球クラブチーム</title>
 <meta name="description" content="館林ベースボールクラブ公式サイト。野球を通じて、これからの人生の糧となる経験を。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header class="bar">
-  <button class="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
-</header>
-<nav id="menu" class="menu" hidden>
-  <ul>
-    <li><a href="#about">チームについて</a></li>
-    <li><a href="#partner">パートナー</a></li>
-    <li><a href="INSTAGRAM_URL" target="_blank" rel="noopener">インスタグラム</a></li>
-    <li><a href="#recruit">新入生募集</a></li>
-    <li><a href="#facility">施設</a></li>
-    <li><a href="#contact">お問い合わせ</a></li>
-  </ul>
-</nav>
-
-<!-- ヒーロー動画：assets/hero.mp4 を置くと再生されます -->
+<link rel="stylesheet" href="style.css"></head>
+<body class="top">
 <section class="hero">
-  <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
-    <source src="assets/hero.mp4" type="video/mp4">
-  </video>
+  <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg"><source src="assets/hero.mp4" type="video/mp4"></video>
   <img class="hero-logo" src="assets/logo-white.png" alt="館林ベースボールクラブ" onerror="this.style.display='none'">
 </section>
-
+<section id="about" class="about">
+  <h2 class="display">チームについて<small>ABOUT THE TEAM</small></h2>
+  <a class="tile" href="policy.html"><img src="assets/about-policy.jpg" alt="" onerror="this.remove()"><span>指導方針</span></a>
+  <a class="tile" href="facility.html"><img src="assets/about-facility.jpg" alt="" onerror="this.remove()"><span>活動施設</span></a>
+  <a class="tile" href="recruit.html"><img src="assets/about-recruit.jpg" alt="" onerror="this.remove()"><span>6期生募集要項</span></a>
+</section>
 <section class="message">
   <img class="msg-logo" src="assets/logo-white.png" alt="" onerror="this.style.display='none'">
   <h1 class="display">人生の主人公は君だ</h1>
@@ -42,55 +22,13 @@
   <p>仲間と挑戦すること。自分で考え、選択すること。好きなことに夢中になること。そして、自分の選択に責任を持ち、行動すること。</p>
   <p>私たちは、野球を通じて得られる一つひとつの経験が、選手たちのこれからの人生を支える力になると考えています。</p>
 </section>
-
-<section id="about" class="about">
-  <h2 class="display">チームについて<small>ABOUT THE TEAM</small></h2>
-  <a class="tile" href="#policy"><img src="assets/about-policy.jpg" alt="" onerror="this.remove()"><span>指導方針</span></a>
-  <a class="tile" href="#facility"><img src="assets/about-facility.jpg" alt="" onerror="this.remove()"><span>活動施設</span></a>
-  <a class="tile" href="#recruit"><img src="assets/about-recruit.jpg" alt="" onerror="this.remove()"><span>6期生募集要項</span></a>
-</section>
-
 <section id="news" class="news">
   <h2 class="display news-head">活動報告・お知らせ<small>NEWS</small></h2>
   <ul id="news-list" data-limit="3"><li class="loading">読み込み中…</li></ul>
   <a class="btn" href="news.html">活動報告一覧を見る</a>
 </section>
-
-<!-- ▼ 下の各セクションの文章は、あとで書き換えてください ▼ -->
-<section id="policy" class="info">
-  <h2 class="display">指導方針</h2>
-  <p>ここに指導方針の文章を入れます。</p>
+<section class="contact info">
+  <a class="btn gray" data-contact target="_blank" rel="noopener" href="#">お問い合わせはこちら</a>
 </section>
-
-<section id="facility" class="info">
-  <h2 class="display">活動施設</h2>
-  <p>ここに活動場所・練習日・アクセスを入れます。</p>
-</section>
-
-<section id="recruit" class="info">
-  <h2 class="display">6期生募集要項</h2>
-  <p>ここに対象学年・体験練習の日程・費用などを入れます。</p>
-</section>
-
-<section id="partner" class="info">
-  <h2 class="display">パートナー</h2>
-  <p>ここにスポンサー・協力企業のロゴを並べます。</p>
-</section>
-
-<section id="contact" class="info contact">
-  <h2 class="display">お問い合わせ</h2>
-  <p>体験練習・入団のご相談はお気軽にどうぞ。</p>
-  <a class="btn gray" href="CONTACT_URL" target="_blank" rel="noopener">お問い合わせはこちら</a>
-</section>
-
-<footer>
-  <a href="INSTAGRAM_URL" target="_blank" rel="noopener" class="insta">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-    INSTAGRAM
-  </a>
-  <p>© 館林ベースボールクラブ</p>
-</footer>
-
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
