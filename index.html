@@ -1,101 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080b10">
-  <meta name="description" content="館林ベースボールクラブ公式ホームページ。「君が主人公。」一人ひとりが成長し、仲間と本気で野球に向き合うチームです。">
-  <meta property="og:title" content="館林ベースボールクラブ｜君が主人公。">
-  <meta property="og:description" content="君が主人公。館林ベースボールクラブ公式ホームページ">
-  <meta property="og:type" content="website">
-  <title>館林ベースボールクラブ｜君が主人公。</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>館林ベースボールクラブ | 中学軟式野球クラブチーム</title>
+<meta name="description" content="館林ベースボールクラブ公式サイト。野球を通じて、これからの人生の糧となる経験を。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topline"></div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="館林ベースボールクラブ トップ">
-      <img class="brand-logo" src="assets/logo.png" alt="館林ベースボールクラブ ロゴ" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
-      <span class="brand-monogram" aria-hidden="true">T<span>BBC</span></span>
-      <span class="brand-copy"><strong>館林ベースボールクラブ</strong><small>TATEBAYASHI BASEBALL CLUB</small></span>
-    </a>
-    <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" aria-label="メインナビゲーション">
-      <a href="#about">ABOUT</a><a href="#team">TEAM</a><a href="#news">NEWS</a><a href="#join">JOIN US</a>
-      <a class="nav-insta" href="https://instagram.com/tatebayashi_bbc?rpxt=Ym0xYnQ1MnVuZWh5&utm_source=qr" target="_blank" rel="noopener">INSTAGRAM ↗</a>
-    </nav>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-photo" role="img" aria-label="チーム写真を配置するメインビジュアル"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-grid"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span></span> TATEBAYASHI BASEBALL CLUB</p>
-        <h1>君が<br><em>主人公。</em></h1>
-        <p class="hero-lead">本気で挑む。仲間と成長する。<br>その一球が、自分の未来をつくる。</p>
-        <a class="hero-cta" href="#join"><span>体験・入団について</span><b>↗</b></a>
-      </div>
-      <div class="hero-side-label">PLAY YOUR STORY / EST. TATEBAYASHI</div>
-      <div class="hero-bottom"><span>01</span><i></i><span>BASEBALL IS MORE THAN A GAME</span></div>
-      <div class="hero-scroll">SCROLL <span></span></div>
-    </section>
+<header class="bar">
+  <button class="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</header>
+<nav id="menu" class="menu" hidden>
+  <ul>
+    <li><a href="#about">チームについて</a></li>
+    <li><a href="#partner">パートナー</a></li>
+    <li><a href="INSTAGRAM_URL" target="_blank" rel="noopener">インスタグラム</a></li>
+    <li><a href="#recruit">新入生募集</a></li>
+    <li><a href="#facility">施設</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+  </ul>
+</nav>
 
-    <section class="intro section-pad" id="about">
-      <div class="section-kicker"><span>01</span> OUR PHILOSOPHY</div>
-      <div class="intro-layout">
-        <h2>野球を通して、<br><span>自分を超えていく。</span></h2>
-        <div class="intro-text">
-          <p class="lead">主役は、いつだって一人ひとり。</p>
-          <p>うまい・へた、今の実力だけで未来は決まらない。挑戦する勇気、仲間を思う気持ち、昨日の自分を超えようとする努力。そのすべてが、君だけの物語になる。</p>
-          <p>館林ベースボールクラブは、野球に本気で向き合う仲間とともに、一人ひとりの成長を目指します。</p>
-          <span class="signature">YOUR GAME. YOUR STORY.</span>
-        </div>
-      </div>
-    </section>
+<!-- ヒーロー動画：assets/hero.mp4 を置くと再生されます -->
+<section class="hero">
+  <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
+  <img class="hero-logo" src="assets/logo-white.png" alt="館林ベースボールクラブ" onerror="this.style.display='none'">
+</section>
 
-    <section class="photo-break">
-      <div class="photo-break-image"></div>
-      <div class="photo-break-copy"><span>ONE TEAM.</span><strong>ONE DREAM.</strong><small>一人では見られない景色を、仲間と。</small></div>
-    </section>
+<section class="message">
+  <img class="msg-logo" src="assets/logo-white.png" alt="" onerror="this.style.display='none'">
+  <h1 class="display">人生の主人公は君だ</h1>
+  <h2>野球を通じて、これからの<br>人生の糧となる経験を。</h2>
+  <p>館林ベースボールクラブが大切にしているのは、野球の技術や勝敗だけではありません。</p>
+  <p>仲間と挑戦すること。自分で考え、選択すること。好きなことに夢中になること。そして、自分の選択に責任を持ち、行動すること。</p>
+  <p>私たちは、野球を通じて得られる一つひとつの経験が、選手たちのこれからの人生を支える力になると考えています。</p>
+</section>
 
-    <section class="team section-pad" id="team">
-      <div class="section-kicker"><span>02</span> WHAT WE VALUE</div>
-      <div class="section-heading"><h2>成長するための、<br class="mobile-only">3つの力。</h2><p>野球の技術だけじゃない。<br>これからの自分をつくる力を。</p></div>
-      <div class="value-grid">
-        <article class="value-card"><span class="value-no">01</span><div class="value-icon">↗</div><h3>CHALLENGE</h3><h4>挑戦する力</h4><p>失敗を恐れず、一歩踏み出す。挑戦の数だけ、成長のチャンスがある。</p></article>
-        <article class="value-card"><span class="value-no">02</span><div class="value-icon">◎</div><h3>TEAMWORK</h3><h4>仲間を信じる力</h4><p>一人では届かない目標も、仲間となら目指せる。支え合い、競い合う。</p></article>
-        <article class="value-card"><span class="value-no">03</span><div class="value-icon">✦</div><h3>GROWTH</h3><h4>自分を超える力</h4><p>昨日より少し前へ。日々の積み重ねが、自信と未来につながっていく。</p></article>
-      </div>
-    </section>
+<section id="about" class="about">
+  <h2 class="display">チームについて<small>ABOUT THE TEAM</small></h2>
+  <a class="tile" href="#policy"><img src="assets/about-policy.jpg" alt="" onerror="this.remove()"><span>指導方針</span></a>
+  <a class="tile" href="#facility"><img src="assets/about-facility.jpg" alt="" onerror="this.remove()"><span>活動施設</span></a>
+  <a class="tile" href="#recruit"><img src="assets/about-recruit.jpg" alt="" onerror="this.remove()"><span>6期生募集要項</span></a>
+</section>
 
-    <section class="news section-pad" id="news">
-      <div class="news-head"><div><div class="section-kicker"><span>03</span> LATEST UPDATES</div><h2>NEWS<span>.</span></h2></div><p>チームからのお知らせ</p></div>
-      <div id="news-list" class="news-list" aria-live="polite"></div>
-      <p class="news-note">※ お知らせはサイト管理者が更新します。公開前に最新情報へ差し替えてください。</p>
-    </section>
+<section id="news" class="news">
+  <h2 class="display news-head">活動報告・お知らせ<small>NEWS</small></h2>
+  <ul id="news-list" data-limit="3"><li class="loading">読み込み中…</li></ul>
+  <a class="btn" href="news.html">活動報告一覧を見る</a>
+</section>
 
-    <section class="join" id="join">
-      <div class="join-bg"></div><div class="join-content">
-        <div class="section-kicker"><span>04</span> YOUR NEXT CHAPTER</div>
-        <p class="join-pre">次の主人公は、君だ。</p>
-        <h2>PLAY<br><em>WITH US.</em></h2>
-        <p class="join-desc">「野球が好き」「もっと上手くなりたい」「仲間と本気で挑戦したい」<br>その気持ちが、最初の一歩です。</p>
-        <a class="join-button" href="https://instagram.com/tatebayashi_bbc?rpxt=Ym0xYnQ1MnVuZWh5&utm_source=qr" target="_blank" rel="noopener"><span>体験・入団の相談はInstagramへ</span><b>↗</b></a>
-        <small>活動日・場所・募集状況などは、Instagramからお問い合わせください。</small>
-      </div>
-    </section>
-  </main>
+<!-- ▼ 下の各セクションの文章は、あとで書き換えてください ▼ -->
+<section id="policy" class="info">
+  <h2 class="display">指導方針</h2>
+  <p>ここに指導方針の文章を入れます。</p>
+</section>
 
-  <footer class="site-footer">
-    <a class="footer-brand" href="#top"><span class="footer-mark">T<span>BBC</span></span><span><strong>館林ベースボールクラブ</strong><small>TATEBAYASHI BASEBALL CLUB</small></span></a>
-    <a class="footer-insta" href="https://instagram.com/tatebayashi_bbc?rpxt=Ym0xYnQ1MnVuZWh5&utm_source=qr" target="_blank" rel="noopener">INSTAGRAM ↗</a>
-    <div class="footer-bottom"><span>君が主人公。</span><span>© <span id="year"></span> TATEBAYASHI BASEBALL CLUB</span></div>
-  </footer>
-  <script src="script.js"></script>
+<section id="facility" class="info">
+  <h2 class="display">活動施設</h2>
+  <p>ここに活動場所・練習日・アクセスを入れます。</p>
+</section>
+
+<section id="recruit" class="info">
+  <h2 class="display">6期生募集要項</h2>
+  <p>ここに対象学年・体験練習の日程・費用などを入れます。</p>
+</section>
+
+<section id="partner" class="info">
+  <h2 class="display">パートナー</h2>
+  <p>ここにスポンサー・協力企業のロゴを並べます。</p>
+</section>
+
+<section id="contact" class="info contact">
+  <h2 class="display">お問い合わせ</h2>
+  <p>体験練習・入団のご相談はお気軽にどうぞ。</p>
+  <a class="btn gray" href="CONTACT_URL" target="_blank" rel="noopener">お問い合わせはこちら</a>
+</section>
+
+<footer>
+  <a href="INSTAGRAM_URL" target="_blank" rel="noopener" class="insta">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+    INSTAGRAM
+  </a>
+  <p>© 館林ベースボールクラブ</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
