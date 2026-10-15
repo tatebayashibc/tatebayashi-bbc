@@ -37,7 +37,7 @@ if(list){
     list.innerHTML='';
     items.forEach(n=>{
       const li=document.createElement('li'),a=document.createElement('a');
-      a.href=n.url||'#';if(n.url&&/^https?:/.test(n.url))a.target='_blank',a.rel='noopener';
+      if(n.url){a.href=n.url;a.target='_blank';a.rel='noopener'}else if(n.body){a.href='news-detail.html?id='+encodeURIComponent(n.id)}else{a.removeAttribute('href');a.style.pointerEvents='none'}
       const th=document.createElement('span');th.className='thumb';
       if(n.image)th.style.backgroundImage=`url("${n.image}")`;
       const tx=document.createElement('span');tx.className='txt';
@@ -48,4 +48,22 @@ if(list){
       a.append(th,tx,ar);li.append(a);list.append(li);
     });
   }).catch(()=>{list.innerHTML='<li class="loading">お知らせを読み込めませんでした。</li>'});
+}
+
+// 記事ページ：news-detail.html?id=○○ → news.json から本文を表示
+const art=document.getElementById('article');
+if(art){
+  const id=new URLSearchParams(location.search).get('id');
+  fetch('news.json').then(r=>r.json()).then(items=>{
+    const n=items.find(x=>String(x.id)===id);
+    if(!n){art.innerHTML='<p>記事が見つかりませんでした。</p>';return}
+    document.title=n.title.replace(/\n/g,' ')+' | 館林ベースボールクラブ';
+    art.innerHTML='';
+    const t=document.createElement('time');t.textContent=n.date.replace(/-/g,'.');
+    const h=document.createElement('h2');h.className='display';h.textContent=n.title.replace(/\n/g,' ');
+    art.append(t,h);
+    (n.images||(n.image?[n.image]:[])).forEach(src=>{const i=document.createElement('img');i.className='photo';i.src=src;i.alt='';i.onerror=()=>i.remove();art.append(i)});
+    String(n.body||'').split('\n').filter(Boolean).forEach(s=>{const p=document.createElement('p');p.textContent=s;art.append(p)});
+    const b=document.createElement('a');b.className='btn';b.href='news.html';b.textContent='活動報告一覧へ';art.append(b);
+  }).catch(()=>{art.innerHTML='<p>読み込めませんでした。</p>'});
 }
