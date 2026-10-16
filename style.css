@@ -5,6 +5,9 @@
    .h2 / .message h1＝見出し / .eyebrow＝小さな英字ラベル / .btn＝ボタン / .hero-copy .en＝動画上の英字
  [行間] line-height（body＝1.9、.message p と .content p＝2.1。大きいほどゆったり）
  [太さ] font-weight（900＝極太 / 700＝太い / 500＝やや太い / 400＝標準）
+ [タイトル帯の高さ] .phero の min-height（全ページ共通） / [文字画像] .title-img の width（人生の主人公は君だ）
+ [ロゴ] .hero-logo＝動画の上のロゴ（left/top＝位置の%、width＝大きさ。assets/hero-logo.png を入れると表示）
+        .msg-logo＝人生の主人公は君だの下のロゴ（width＝大きさ、margin-top＝上との間隔。assets/logo-white.png）
  [色] 下の :root の --accent（赤）--black --paper
  [余白] padding:clamp(...) が各セクションの上下の余白（.about / .news / .partners / .message / .cta）
 */
@@ -210,6 +213,40 @@ footer{padding-top:40px}
 .partners .plist li{background:rgba(255,255,255,.95)}
 
 /* ===== 下層ページ：タイトルの黒背景に写真を入れる（assets/policy.jpg など。無いときは黒） ===== */
-.phero{display:flex;align-items:flex-end;min-height:clamp(320px,46vw,460px);background:linear-gradient(rgba(10,10,10,.5),rgba(10,10,10,.82)),var(--bg,none) center/cover no-repeat,var(--black)}
+.phero{display:flex;align-items:flex-end;min-height:clamp(320px,46vw,460px);background:linear-gradient(rgba(10,10,10,.55),rgba(10,10,10,.85)),var(--bg,none) center/cover no-repeat,var(--black)}
 .phero .in{width:100%}
 .phero.tall{min-height:clamp(440px,82svh,780px)}
+.msg-logo{display:block}
+
+/* ===== 下層ページのタイトル帯：高さを全ページ統一（横長）・文字も統一 ===== */
+.phero,.phero.tall{min-height:clamp(300px,34vw,400px)}
+.phero h1{font-size:clamp(28px,5vw,56px)}
+/* 手描き文字の画像（人生の主人公は君だ）。大きさは width で調整 */
+.title-img{display:block;width:min(100%,clamp(300px,50vw,620px));height:auto}
+/* NEXT を控えめに */
+.pnav a{padding:20px var(--pad)}
+.pnav small{font-size:11px;letter-spacing:.18em;line-height:1.4}
+.pnav b{font-size:clamp(14px,1.7vw,16px);font-weight:700;margin-top:2px;line-height:1.5;letter-spacing:.04em}
+/* メニュー項目が増えても収まるように */
+.menu{overflow-y:auto}
+@media(max-height:720px){.menu .en{font-size:30px}.menu a{padding:8px 0}}
+/* 戦績 */
+.res{border-top:1px solid #ddd}
+.res li{display:grid;grid-template-columns:auto 1fr auto;gap:4px 18px;align-items:center;padding:18px 0;border-bottom:1px solid #ddd}
+.res time{font-family:var(--font-display);font-style:italic;font-weight:700;letter-spacing:.12em;font-size:14px;color:var(--mute)}
+.res b{font-weight:900;font-size:15px;line-height:1.6}.res small{display:block;font-weight:500;color:#666;font-size:13px}
+.res em{font-style:normal;font-family:var(--font-display);font-weight:800;font-size:22px;letter-spacing:.06em}
+.res em.win{color:var(--accent)}.res em.lose{color:var(--mute)}
+@media(max-width:560px){.res li{grid-template-columns:1fr auto}.res time{grid-column:1/-1}}
+/* 選手 */
+.content.wide{max-width:var(--max)}
+.players{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+.pcard{position:relative;aspect-ratio:3/4;overflow:hidden;background:linear-gradient(135deg,#1b1b1b,#333);color:#fff}
+.pcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.pcard:hover img{transform:scale(1.05)}
+.pcard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.85))}
+.pcard .no{position:absolute;z-index:1;top:10px;left:14px;font-family:var(--font-display);font-style:italic;font-weight:800;font-size:clamp(34px,6vw,56px);line-height:1;-webkit-text-stroke:1px rgba(255,255,255,.8);color:transparent}
+.pcard .nm{position:absolute;z-index:1;left:14px;right:14px;bottom:14px}
+.pcard .nm b{display:block;font-weight:900;font-size:15px;line-height:1.4}
+.pcard .nm small{font-size:11px;letter-spacing:.1em;color:#ccc}
+@media(min-width:800px){.players{grid-template-columns:repeat(4,1fr);gap:16px}}

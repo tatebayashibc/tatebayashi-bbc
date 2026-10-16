@@ -84,3 +84,33 @@ GitHubで `style.css` を開き、鉛筆アイコンで編集 → Commit。フ�
 ### 色・余白
 - 色：`:root` の `--accent`（赤）`--black` `--paper`（薄グレー）
 - 余白：各セクションの `padding:clamp(...)`（`.about` `.news` `.partners` `.message` `.cta`）
+
+## ロゴの場所と大きさ
+ロゴは2か所あり、ファイルも別です。どちらも透過PNG（白）で、無いときは表示されません。
+| 場所 | ファイル | style.css のクラス |
+|---|---|---|
+| 動画の上（最初の画面） | `assets/hero-logo.png` | `.hero-logo` |
+| 「人生の主人公は君だ」の文末 | `assets/logo-white.png` | `.msg-logo` |
+
+### 動画の上のロゴ（.hero-logo）
+```
+.hero-logo{ left:50%; top:44%; transform:translate(-50%,-50%); width:clamp(70px,12vw,120px); }
+```
+- 位置：`left`（横）と `top`（縦）の%。`top:44%` を `30%` にすると上へ、`60%` にすると下へ
+- 大きさ：`width` の3つの数字（スマホ最小・画面幅比例・PC最大）
+- 左上に置きたいとき：`left:20px; top:90px; transform:none;` に書き換える
+- 動画の上にロゴを出したくないとき：`hero-logo.png` をアップロードしない（または index.html の `<img class="hero-logo" ...>` の行を消す）
+
+### 文末のロゴ（.msg-logo）
+```
+.msg-logo{ width:clamp(90px,13vw,140px); margin-top:36px; }
+```
+- 大きさ：`width`／上の文章との間隔：`margin-top`
+- 中央に置く：`margin-left:auto; margin-right:auto;` を足す
+- 右に置く：`margin-left:auto;` を足す
+
+## 追加：戦績・選手ページ / 手描き文字
+- メニューに「戦績」`results.html`「選手」`players.html` を追加。文章・行は各HTMLの「ここに入力」を書き換え、`<li>` の1行（または1枚）をコピーして増やします
+- 選手の写真：`assets/player-1.jpg` 〜（縦長 3:4 推奨）。ページ上部の写真は `results.jpg` / `players.jpg`
+- 「人生の主人公は君だ」の手描き文字：`assets/title-message.png`（白文字・透過PNG・横長）を入れると文字の代わりに表示。大きさは `style.css` の `.title-img` の `width:min(100%,clamp(300px,50vw,620px))`（最小・画面比例・最大）を調整。画像が無い間は通常の文字が出ます
+- 下層ページのタイトル帯の高さは全ページ共通：`.phero` の `min-height`
