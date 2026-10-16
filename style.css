@@ -174,4 +174,23 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 /* TOPでは、スクロール時にヘッダーの黒い帯を出さない（3本線ボタンだけ残す） */
 .top .bar.scrolled{background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
 /* 下の写真を撤去した分の余白 */
-.message{padding-bottom:clamp(147px, calc(11vw + 75px), 215px)}
+.message{padding-bottom:clamp(72px,11vw,140px)}
+
+/* ===== 調整（余白・ボタン・フェード・画像帯） ===== */
+.about{padding-top:clamp(36px,5.5vw,70px)}
+/* ボタンを小さく */
+.btn{gap:10px;padding:12px 22px;font-size:12px;letter-spacing:.16em}
+/* 人生の主人公は → 下へ黒でフェードして活動報告へ */
+.message{padding-bottom:clamp(96px,14vw,180px);background:linear-gradient(to top,var(--black),rgba(10,10,10,0) 260px),linear-gradient(var(--black),rgba(10,10,10,0) 180px),linear-gradient(rgba(10,10,10,.68),rgba(10,10,10,.9)),url(assets/bg-message.jpg) center/cover no-repeat,var(--black)}
+.msg-logo{width:clamp(90px,13vw,140px);margin-top:36px}
+.news{background:var(--black);color:#fff}
+.news .progress{background:rgba(255,255,255,.25)}.news .progress i{background:#fff}
+.news .loading{color:#bbb}
+/* お問い合わせの下の余白を約半分に */
+.cta{padding-bottom:clamp(28px,4.5vw,56px)}
+footer{padding-top:40px}
+/* 画像帯：各ページのタイトル直下 / トップのパートナー下 */
+.pimg{position:relative;height:clamp(240px,52vw,560px);background:linear-gradient(135deg,#1b1b1b,#333);overflow:hidden}
+.pimg.tall{height:clamp(340px,78vw,820px)}
+.pimg img{width:100%;height:100%;object-fit:cover}
+.partners+.pimg{height:clamp(200px,38vw,460px)}
