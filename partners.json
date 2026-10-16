@@ -1,6 +1,9 @@
 [
-  {"name":"協賛企業名","logo":"assets/partner-1.png","url":""},
-  {"name":"協賛企業名","logo":"assets/partner-2.png","url":""},
-  {"name":"協賛企業名","logo":"assets/partner-3.png","url":""},
-  {"name":"協賛企業名","logo":"assets/partner-4.png","url":""}
+  {"logo":"assets/omuni.png","url":"https://web-omnibus.co.jp/"},
+  {"logo":"assets/kaeru.png","url":"https://kaeru-tatebayashi.studio.site/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAacleW9qZMja8l9MbSK-uJGeLUsR5ltwGdZVZbNcQOpXHN3dkSJ7UTyIGU4rZQ_aem_U6BEKi8C_mjNKo1IkDIPnw&utm_id=97760_v0_s00_e0_tv3"},
+  {"logo":"assets/toi.png","url":""},
+  {"logo":"assets/rop.png","url":""}
+  {"logo":"assets/mebuki.png","url":"https://mebuki.net/roots/"}
+  {"logo":"assets/tateban.png","url":"https://tateban.co.jp/"}
+  {"logo":"assets/hibari.png","url":"https://chukasobahibari.com/"}
 ]
