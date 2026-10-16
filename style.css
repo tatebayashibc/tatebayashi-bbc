@@ -170,3 +170,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .news{background:#f2f1ee}
 .partners{background:#fff}
 .cta{background:linear-gradient(rgba(10,10,10,.8),rgba(10,10,10,.9)),url(assets/bg-cta.jpg) center/cover no-repeat,var(--black)}
+
+/* TOPでは、スクロール時にヘッダーの黒い帯を出さない（3本線ボタンだけ残す） */
+.top .bar.scrolled{background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+/* 下の写真を撤去した分の余白 */
+.message{padding-bottom:clamp(72px,11vw,140px)}
