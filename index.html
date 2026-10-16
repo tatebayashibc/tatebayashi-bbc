@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>館林ベースボールクラブ | 中学軟式野球クラブチーム</title>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>館林ベースボールクラブ | 中学軟式野球クラブチーム</title><meta name="theme-color" content="#0a0a0a">
 <meta name="description" content="館林ベースボールクラブ公式サイト。野球を通じて、これからの人生の糧となる経験を。">
-<link rel="stylesheet" href="style.css"></head>
+<script>document.documentElement.className='js'</script><link rel="stylesheet" href="style.css"></head>
 <body class="top">
 <section class="hero">
   <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg"><source src="assets/hero.mp4" type="video/mp4"></video>
-  <img class="hero-logo" src="assets/logo-white.png" alt="館林ベースボールクラブ" onerror="this.style.display='none'">
+  <img class="hero-logo" src="assets/logo-white.png" alt="館林ベースボールクラブ" onerror="this.remove()">
+  <div class="hero-copy"><h2 class="en" aria-label="Life's protagonist is you."><span><i style="--i:0">Life's</i></span><span><i style="--i:1">Protagonist</i></span><span><i style="--i:2">is you.</i></span></h2></div>
+  <div class="scroll" aria-hidden="true">SCROLL</div>
 </section>
-<section id="about" class="about">
-  <h2 class="display">チームについて<small>ABOUT THE TEAM</small></h2>
-  <a class="tile" href="policy.html"><img src="assets/about-policy.jpg" alt="" onerror="this.remove()"><span>指導方針</span></a>
-  <a class="tile" href="facility.html"><img src="assets/about-facility.jpg" alt="" onerror="this.remove()"><span>活動施設</span></a>
-  <a class="tile" href="recruit.html"><img src="assets/about-recruit.jpg" alt="" onerror="this.remove()"><span>6期生募集要項</span></a>
-</section>
-<section class="message">
-  <img class="msg-logo" src="assets/logo-white.png" alt="" onerror="this.style.display='none'">
-  <h1 class="display">人生の主人公は君だ</h1>
-  <h2>野球を通じて、これからの<br>人生の糧となる経験を。</h2>
-  <p>館林ベースボールクラブが大切にしているのは、野球の技術や勝敗だけではありません。</p>
-  <p>仲間と挑戦すること。自分で考え、選択すること。好きなことに夢中になること。そして、自分の選択に責任を持ち、行動すること。</p>
-  <p>私たちは、野球を通じて得られる一つひとつの経験が、選手たちのこれからの人生を支える力になると考えています。</p>
-</section>
+<div class="marquee" aria-hidden="true"><div><span>Tatebayashi Baseball Club —</span><span>Tatebayashi Baseball Club —</span><span>Tatebayashi Baseball Club —</span><span>Tatebayashi Baseball Club —</span></div></div>
+
+<section id="about" class="about"><div class="wrap">
+  <div class="rv"><span class="eyebrow">About the team</span><h2 class="h2">チームについて</h2></div>
+  <div class="cards3">
+    <a class="tile rv" href="policy.html"><img src="assets/about-policy.jpg" alt="" onerror="this.remove()"><span class="no">01</span><span class="tx"><b>Policy</b><span>指導方針</span></span><span class="go"></span></a>
+    <a class="tile rv" href="facility.html"><img src="assets/about-facility.jpg" alt="" onerror="this.remove()"><span class="no">02</span><span class="tx"><b>Facility</b><span>活動施設</span></span><span class="go"></span></a>
+    <a class="tile rv" href="recruit.html"><img src="assets/about-recruit.jpg" alt="" onerror="this.remove()"><span class="no">03</span><span class="tx"><b>Recruit</b><span>6期生募集要項</span></span><span class="go"></span></a>
+  </div>
+</div></section>
+
+<section class="message"><div class="wrap">
+  <span class="eyebrow rv">Philosophy</span>
+  <div class="cols">
+    <div class="rv"><h1>人生の主人公は君だ</h1><h2>野球を通じて、これからの<br>人生の糧となる経験を。</h2></div>
+    <div class="rv">
+      <p>館林ベースボールクラブが大切にしているのは、野球の技術や勝敗だけではありません。</p>
+      <p>仲間と挑戦すること。自分で考え、選択すること。好きなことに夢中になること。そして、自分の選択に責任を持ち、行動すること。</p>
+      <p>私たちは、野球を通じて得られる一つひとつの経験が、選手たちのこれからの人生を支える力になると考えています。</p>
+    </div>
+  </div>
+  <div class="photo rv"><img src="assets/message.jpg" alt="" onerror="this.remove()"></div>
+</div></section>
+
 <section id="news" class="news">
-  <h2 class="display news-head">活動報告・お知らせ<small>NEWS</small></h2>
-  <ul id="news-list" data-limit="3"><li class="loading">読み込み中…</li></ul>
-  <a class="btn" href="news.html">活動報告一覧を見る</a>
+  <div class="wrap"><div class="news-top rv"><div><span class="eyebrow">News</span><h2 class="h2">活動報告・お知らせ</h2></div>
+  <div class="arrows"><button class="prev" aria-label="前へ">←</button><button class="next" aria-label="次へ">→</button></div></div></div>
+  <ul id="news-list" class="rail" data-limit="8"><li class="loading">読み込み中…</li></ul>
+  <div class="progress"><i></i></div>
+  <div class="more"><a class="btn" href="news.html">活動報告一覧を見る</a></div>
 </section>
-<section class="contact info">
-  <a class="btn gray" data-contact target="_blank" rel="noopener" href="#">お問い合わせはこちら</a>
-</section>
+
+<section id="partners" class="partners"><div class="wrap">
+  <div class="rv"><span class="eyebrow">Partners</span><h2 class="h2">協賛・パートナーズ</h2></div>
+  <ul id="partner-list" class="plist"></ul>
+  <div class="more" style="margin-left:0"><a class="btn" href="partner.html">パートナー一覧</a></div>
+</div></section>
+
+<section class="cta"><div class="big rv" aria-hidden="true">Join us</div><p class="rv">体験練習・入団のご相談はお気軽にどうぞ。</p><a class="btn white rv" data-contact target="_blank" rel="noopener" href="#">お問い合わせはこちら</a></section>
 <script src="script.js"></script>
 </body></html>
