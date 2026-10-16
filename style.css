@@ -277,3 +277,5 @@ footer{padding-top:40px}
 .phero time{order:3}
 .plist a,.plist div{padding:0}
 .plist img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;filter:none;opacity:1}
+.plist{grid-template-columns:repeat(3,1fr);max-width:720px}
+.plist a,.plist div{height:auto;aspect-ratio:3/2}
