@@ -1,6 +1,6 @@
 // ===== 設定：ここのURLを書き換えてください =====
-const INSTAGRAM_URL="https://www.instagram.com/";
-const CONTACT_URL="https://forms.gle/";
+const INSTAGRAM_URL="https://www.instagram.com/tatebayashi_bbc?dlrf=Ym0xYnQ1MnVuZWh5&utm_source=qr";
+const CONTACT_URL="https://lin.ee/rcBVZ9K";
 // メニュー項目（全ページ共通）[日本語, 英語, URL, 外部リンクならtrue]
 const MENU=[
   ["チームについて","About","index.html#about"],
