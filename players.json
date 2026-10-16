@@ -4,14 +4,14 @@
   "no": 1,
   "name": "S.N.",
   "pos": "旭サザンクロス（太田）",
-  "photo": "syoya.jpg"
+  "photo": "assets/syoya.jpg"
  },
  {
   "grade": 1,
   "no": 4,
   "name": "J.S.",
   "pos": "１小クラブ（館林）",
-  "photo": "junpei.jpg"
+  "photo": "assets/junpei.jpg"
  },
  {
   "grade": 1,
@@ -25,140 +25,140 @@
   "no": 6,
   "name": "Y.O.",
   "pos": "館林リトル（館林）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/yuma.jpg"
  },
  {
   "grade": 1,
   "no": 7,
   "name": "G.S.",
   "pos": "みのりクラブ（館林）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/gento.jpg"
  },
  {
   "grade": 1,
   "no": 8,
   "name": "M.N..",
   "pos": "明和ジュニアヒーローズ（明和）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/masahiro.jpg"
  },
  {
   "grade": 1,
   "no": 17,
   "name": "A.O.",
   "pos": "館林リトル（館林）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/atsuki.jpg"
  },
  {
   "grade": 1,
   "no":22,
   "name": "S.S.",
   "pos": "騎西少年野球クラブ（埼玉：騎西）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/shinya.jpg"
  },
  {
   "grade": 1,
   "no": 51,
   "name": "S.H.",
   "pos": "千代田ゴールデンイーグルス（千代田）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/sena.jpg"
  },
   {
   "grade": 1,
   "no": 55,
   "name": "R.K.",
   "pos": "明和ジュニアヒーローズ（明和）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/reo.jpg"
  },
  {
   "grade": 1,
   "no": 58,
   "name": "E.K.",
   "pos": "美園小サンダース（館林）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/eita.jpg"
  },
  {
   "grade": 1,
   "no": 62,
   "name": "S.K.",
   "pos": "大和スピリット（埼玉：羽生）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/shunta.jpg"
  },
  {
   "grade": 1,
   "no": 89,
   "name": "O.S.",
   "pos": "館林リトル（館林）",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/shuya.jpg"
  },
  {
   "grade": 1,
   "no": 90,
   "name": "F.K..",
   "pos": "１０小クラブ（館林））",
-  "photo": "assets/player-1-4.jpg"
+  "photo": "assets/fuma.jpg"
  },
  {
   "grade": 2,
   "no": 9,
   "name": "M.I.",
   "pos": "未所属",
-  "photo": "assets/player-2-1.jpg"
+  "photo": "assets/minato.jpg"
  },
  {
   "grade": 2,
   "no": 11,
   "name": "S.N.",
   "pos": "御厨クラブ（栃木：足利）",
-  "photo": "assets/player-2-2.jpg"
+  "photo": "assets/soya.jpg"
  },
  {
   "grade": 2,
   "no": 12,
   "name": "K.T.",
   "pos": "",
-  "photo": "assets/player-2-3.jpg"
+  "photo": "assets/koki.jpg"
  },
  {
   "grade": 2,
   "no": 13,
   "name": "K.I.",
   "pos": "",
-  "photo": "assets/player-2-4.jpg"
+  "photo": "assets/keito.jpg"
  },
  {
   "grade": 2,
   "no": 25,
   "name": "S.M.",
   "pos": "",
-  "photo": "assets/player-2-4.jpg"
+  "photo": "assets/soushi.jpg"
  },
  {
   "grade": 2,
   "no": 30,
   "name": "K.O.",
   "pos": "未所属",
-  "photo": "assets/player-2-4.jpg"
+  "photo": "assets/kousei.jpg"
  },
   {
   "grade": 2,
   "no": 57,
   "name": "K.S.",
   "pos": "館林メッツ（館林）",
-  "photo": "assets/player-2-4.jpg"
+  "photo": "assets/syunta.jpg"
  },
  {
   "grade": 3,
   "no": 0,
   "name": "R.I.",
   "pos": "仙石ジュニア（大泉）",
-  "photo": "assets/player-3-1.jpg"
+  "photo": "assets/rei.jpg"
  },
  {
   "grade": 3,
   "no": 18,
   "name": "A.I",
   "pos": "YAMABE（栃木：足利）",
-  "photo": "assets/player-3-2.jpg"
+  "photo": "assets/akito.jpg"
  },
  
  {
@@ -166,34 +166,34 @@
   "no": 23,
   "name": "R.S.",
   "pos": "仙石ジュニア（大泉）",
-  "photo": "assets/player-3-3.jpg"
+  "photo": "assets/rihito.jpg"
  },
  {
   "grade": 3,
   "no": 59,
   "name": "G.S.",
   "pos": "仙石ジュニア（大泉）",
-  "photo": "assets/player-3-3.jpg"
+  "photo": "assets/gaku.jpg"
  },
  {
   "grade": 3,
   "no": 63,
   "name": "S.S.",
   "pos": "仙石ジュニア（大泉）",
-  "photo": "assets/player-3-3.jpg"
+  "photo": "assets/sho.jpg"
  },
  {
   "grade": 3,
   "no": 77,
   "name": "S.Y.",
   "pos": "仙石ジュニア（大泉）",
-  "photo": "assets/player-3-3.jpg"
+  "photo": "assets/shuntaro.jpg"
  },
  {
   "grade": 3,
   "no": 99,
   "name": "F.W.",
   "pos": "仙石ジュニア（大泉）",
-  "photo": "assets/player-3-3.jpg"
+  "photo": "assets/huma.jpg"
  }
 ]
