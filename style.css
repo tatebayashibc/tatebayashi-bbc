@@ -193,4 +193,8 @@ footer{padding-top:40px}
 .pimg{position:relative;height:clamp(240px,52vw,560px);background:linear-gradient(135deg,#1b1b1b,#333);overflow:hidden}
 .pimg.tall{height:clamp(340px,78vw,820px)}
 .pimg img{width:100%;height:100%;object-fit:cover}
-.partners+.pimg{height:clamp(200px,38vw,460px)}
+
+/* 協賛・パートナーズ：背景に写真（assets/bg-partners.jpg）。ロゴは白い枠の上に載せる */
+.partners{background:linear-gradient(rgba(10,10,10,.78),rgba(10,10,10,.9)),url(assets/bg-partners.jpg) center/cover no-repeat,var(--black);color:#fff}
+.partners .plist{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.22)}
+.partners .plist li{background:rgba(255,255,255,.95)}
