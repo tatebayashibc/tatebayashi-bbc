@@ -268,3 +268,11 @@ footer{padding-top:40px}
 .tabs button:hover{border-color:#fff}
 .tabs button.on{background:#fff;color:#000;border-color:#fff}
 .sum{font-family:var(--font-display);font-style:italic;font-weight:700;letter-spacing:.14em;font-size:15px;color:#bbb;margin-bottom:10px!important}
+
+/* ===== 赤い英字ラベルを、日本語タイトルの「下」に（まとまりを良く） ===== */
+.h2{margin-top:0}
+.h2+.eyebrow,.message h1+.eyebrow{margin-top:14px}
+.phero .in{display:flex;flex-direction:column}
+.phero h1{order:1;margin-top:0}
+.phero .eyebrow{order:2;margin-top:14px}
+.phero time{order:3}
