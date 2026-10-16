@@ -4,10 +4,11 @@
 <script>document.documentElement.className='js'</script><link rel="stylesheet" href="style.css"></head>
 <body class="sub" data-page="results.html">
 <section class="phero" style="--bg:url(assets/results.jpg)"><div class="in"><span class="eyebrow">Results</span><h1>戦績</h1></div><span class="bigword" aria-hidden="true">Results</span></section>
-<main class="content">
-<p>公式戦・大会の結果です。（ここに入力：行をコピーして追加してください）</p>
-<h2>2026</h2>
-<ul class="res"><li><time>2026.10.11</time><b>関東クラブリーグ<small>vs 本村クラブ</small></b><em class="win">○ 5-3</em></li><li><time>2026.10.04</time><b>関東クラブリーグ<small>vs 〇〇クラブ</small></b><em class="lose">● 2-4</em></li><li><time>2026.09.27</time><b>〇〇大会<small>1回戦 vs 〇〇</small></b><em class="win">○ 7-1</em></li></ul>
-</main>
+<div class="body-bg" style="--bg:url(assets/body-results.jpg)"><main class="content wide">
+<nav class="tabs" id="tabs" role="tablist" aria-label="年"></nav>
+<p class="sum" id="res-sum"></p>
+<ul class="res" id="res-list"><li class="loading">読み込み中…</li></ul>
+</main></div>
 <script src="script.js"></script>
+<script src="pages.js"></script>
 </body></html>

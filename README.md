@@ -114,3 +114,24 @@ GitHubで `style.css` を開き、鉛筆アイコンで編集 → Commit。フ�
 - 選手の写真：`assets/player-1.jpg` 〜（縦長 3:4 推奨）。ページ上部の写真は `results.jpg` / `players.jpg`
 - 「人生の主人公は君だ」の手描き文字：`assets/title-message.png`（白文字・透過PNG・横長）を入れると文字の代わりに表示。大きさは `style.css` の `.title-img` の `width:min(100%,clamp(300px,50vw,620px))`（最小・画面比例・最大）を調整。画像が無い間は通常の文字が出ます
 - 下層ページのタイトル帯の高さは全ページ共通：`.phero` の `min-height`
+
+## 戦績（年ごと）・選手（学年ごと）
+- どちらも上にタブ（2026年／2025年…、1年生／2年生／3年生）が出て、タップで切り替わります。`results.html#y2025` `players.html#g2` のように、各タブへ直接リンクもできます。
+- **戦績**：`results.json` に1試合ずつ追加。年は日付から自動でタブになり、年ごとの勝敗数も出ます。
+  `{"date":"2026-10-11","title":"大会名","vs":"vs 相手","result":"win","score":"5-3"}`　result は win / lose / draw
+- **選手**：`players.json` に1人ずつ追加。学年は grade（1〜3）でタブに自動で分かれます。
+  `{"grade":1,"no":10,"name":"山田太郎","pos":"投手","photo":"assets/player-1-10.jpg"}`
+- 行の間は `,`（カンマ）。最後の1行だけカンマなし。
+
+## タイトル帯と本文の背景（画像の入れ方）
+| ページ | タイトル帯の写真 | 本文の背景写真 |
+|---|---|---|
+| 指導方針 | policy.jpg | body-policy.jpg |
+| 活動施設 | facility.jpg | body-facility.jpg |
+| 6期生募集 | recruit.jpg | body-recruit.jpg |
+| 戦績 | results.jpg | body-results.jpg |
+| 選手 | players.jpg | body-players.jpg |
+| パートナー | partner.jpg | body-partner.jpg |
+| 活動報告一覧 | news-page.jpg | body-news.jpg |
+- 活動報告の記事ページは、その記事の `image`（サムネイル）が自動でタイトル背景になります。
+- 本文の背景は、写真が無いときは黒です。写真の上には黒い膜がかかり、文字は白になります。
