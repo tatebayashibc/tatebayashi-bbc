@@ -195,15 +195,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .btn{gap:10px;padding:12px 22px;font-size:12px;letter-spacing:.16em}
 /* 人生の主人公は → 下へ黒でフェードして活動報告へ */
 .message{padding-bottom:clamp(96px,14vw,180px);background:linear-gradient(to top,var(--black),rgba(10,10,10,0) 260px),linear-gradient(var(--black),rgba(10,10,10,0) 180px),linear-gradient(rgba(10,10,10,.68),rgba(10,10,10,.9)),url(assets/bg-message.jpg) center/cover no-repeat,var(--black)}
-.msg-logo {
-  display: block;
-  width: 50px;
-  height: auto;
-  margin: 70px auto 0;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
+.msg-logo{display:block;width:50px;height:auto;margin:70px auto 0}
 .news{background:var(--black);color:#fff}
 .news .progress{background:rgba(255,255,255,.25)}.news .progress i{background:#fff}
 .news .loading{color:#bbb}
@@ -224,7 +216,6 @@ footer{padding-top:40px}
 .phero{display:flex;align-items:flex-end;min-height:clamp(320px,46vw,460px);background:linear-gradient(rgba(10,10,10,.55),rgba(10,10,10,.85)),var(--bg,none) center/cover no-repeat,var(--black)}
 .phero .in{width:100%}
 .phero.tall{min-height:clamp(440px,82svh,780px)}
-.msg-logo{display:block}
 
 /* ===== 下層ページのタイトル帯：高さを全ページ統一（横長）・文字も統一 ===== */
 .phero,.phero.tall{min-height:clamp(300px,34vw,400px)}
