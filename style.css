@@ -284,3 +284,5 @@ footer{padding-top:40px}
 .phero h1{order:1;margin-top:0}
 .phero .eyebrow{order:2;margin-top:14px}
 .phero time{order:3}
+.plist a,.plist div{padding:0}
+.plist img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;filter:none;opacity:1}
