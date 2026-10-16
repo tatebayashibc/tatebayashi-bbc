@@ -159,13 +159,14 @@ footer small{display:block;max-width:var(--max);margin:36px auto 0;font-size:11p
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.hero-copy .en i{transform:none}}
 
-/* ===== 背景画像（assets/bg-○○.jpg を入れると表示。無いときは黒） ===== */
-.message{background:linear-gradient(rgba(10,10,10,.72),rgba(10,10,10,.88)),url(assets/bg-message.jpg) center/cover no-repeat,var(--black)}
-.news{background:linear-gradient(rgba(10,10,10,.78),rgba(10,10,10,.9)),url(assets/bg-news.jpg) center/cover no-repeat,var(--black);color:#fff}
-.news .arrows button{border-color:rgba(255,255,255,.7);color:#fff}
-.news .arrows button:hover{background:#fff;color:#000}
-.news .progress{background:rgba(255,255,255,.25)}.news .progress i{background:#fff}
-.news .loading{color:#bbb}
-.partners{background:linear-gradient(rgba(10,10,10,.8),rgba(10,10,10,.9)),url(assets/bg-partners.jpg) center/cover no-repeat,var(--black);color:#fff}
-.partners .plist{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.22)}
-.partners .plist li{background:rgba(255,255,255,.95)}
+/* ===== セクション背景（上=黒 → 中=明るい → 最後=黒 のリズム） =====
+   ヒーロー/帯/チーム = 黒 / 人生の主人公 = 写真+黒膜 / お知らせ = 温かいグレー / パートナー = 白 / お問い合わせ = 黒(写真任意)
+   写真を入れる場所：assets/bg-message.jpg（必須級）・assets/bg-cta.jpg（任意） */
+.marquee{background:var(--black);border-bottom:1px solid rgba(255,255,255,.12)}
+.marquee span{-webkit-text-stroke:1px rgba(255,255,255,.55)}
+.about{background:var(--black);color:#fff}
+.about .tile{outline:1px solid rgba(255,255,255,.1)}
+.message{background:linear-gradient(var(--black),rgba(10,10,10,0) 180px),linear-gradient(rgba(10,10,10,.68),rgba(10,10,10,.9)),url(assets/bg-message.jpg) center/cover no-repeat,var(--black)}
+.news{background:#f2f1ee}
+.partners{background:#fff}
+.cta{background:linear-gradient(rgba(10,10,10,.8),rgba(10,10,10,.9)),url(assets/bg-cta.jpg) center/cover no-repeat,var(--black)}
