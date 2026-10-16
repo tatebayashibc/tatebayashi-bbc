@@ -41,3 +41,9 @@ index.html(TOP) / policy.html(指導方針) / facility.html(施設) / recruit.ht
 ## 追加した画像・データ
 - `assets/message.jpg`：「人生の主人公は君だ」の下の大きな写真（横長・1600px以上推奨）
 - `partners.json`：協賛・パートナーのロゴ一覧。`assets/partner-1.png`（透過PNG・横長）を入れ、name / logo / url を編集。1社増やすときは1行コピー
+
+## 背景画像（assets に入れるだけ）
+- `bg-message.jpg`：「人生の主人公は君だ」の背景
+- `bg-news.jpg`：活動報告・お知らせの背景
+- `bg-partners.jpg`：協賛・パートナーズの背景
+文字が読めるよう、写真の上に自動で黒い膜がかかります。横長1600px以上、1枚500KB前後を推奨。無い間は黒背景です。
