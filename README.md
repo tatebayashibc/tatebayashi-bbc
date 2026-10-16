@@ -42,8 +42,45 @@ index.html(TOP) / policy.html(指導方針) / facility.html(施設) / recruit.ht
 - `assets/message.jpg`：「人生の主人公は君だ」の下の大きな写真（横長・1600px以上推奨）
 - `partners.json`：協賛・パートナーのロゴ一覧。`assets/partner-1.png`（透過PNG・横長）を入れ、name / logo / url を編集。1社増やすときは1行コピー
 
-## 背景画像（assets に入れるだけ）
-- `bg-message.jpg`：「人生の主人公は君だ」の背景
-- `bg-news.jpg`：活動報告・お知らせの背景
-- `bg-partners.jpg`：協賛・パートナーズの背景
-文字が読めるよう、写真の上に自動で黒い膜がかかります。横長1600px以上、1枚500KB前後を推奨。無い間は黒背景です。
+## 背景画像
+- `bg-message.jpg`：「人生の主人公は君だ」の背景（黒い膜が自動でかかります）
+- `bg-cta.jpg`：一番下「JOIN US」の背景（任意）
+横長1600px以上、1枚500KB前後を推奨。無い間は黒背景です。
+
+## 各ページの写真（タイトルの黒背景に入ります。無いときは黒）
+- `recruit.jpg`（募集要項・とくに大きく表示）/ `policy.jpg` / `facility.jpg` / `partner.jpg` / `news-page.jpg`
+- `bg-partners.jpg`：TOPの協賛・パートナーズの背景
+- 「人生の主人公は君だ」の文末には `logo-white.png` が表示されます
+
+## デザインの調整のしかた（style.css）
+GitHubで `style.css` を開き、鉛筆アイコンで編集 → Commit。ファイルの一番上にも同じ早見表があります。
+
+### フォントを変える
+1. https://fonts.google.com で好きなフォントを選ぶ → 「Get font」→「Get embed code」→「@import」を選ぶ
+2. 表示された `@import url(...)` を、style.css の `@import` の行と差し替える
+3. `:root` の中の名前を、選んだフォント名に変える
+   - `--font-display`：英字・数字の見出し（例：Barlow Condensed）
+   - `--font-head`：日本語の見出し（例：Noto Sans JP）
+   - `--font-body`：本文
+   日本語の候補：Zen Kaku Gothic New / M PLUS 1p / Shippori Mincho（明朝）など
+
+### 文字の大きさ
+`font-size:clamp(最小, 画面幅に比例, 最大)` の3つの数字を変えます。
+例）`.h2` の `clamp(26px,4vw,44px)` → スマホは26px、PCは最大44px。大きくしたいなら `clamp(30px,5vw,56px)` など。
+| 場所 | クラス名 |
+|---|---|
+| 各見出し | `.h2` |
+| 人生の主人公は君だ | `.message h1` |
+| 動画の上の英字 | `.hero-copy .en` |
+| 下層ページの本文 | `.content p`（15px） |
+| 理念の本文 | `.message p`（14px） |
+
+### 文字間・行間・太さ
+- 文字間：`letter-spacing`。`.02em`＝ほんの少し／`.1em`＝広め／`.2em`＝かなり広い／`-.01em`＝詰める
+  見出しは `.h2` `.message h1`、小さな英字ラベルは `.eyebrow`、ボタンは `.btn`
+- 行間：`line-height`。全体は `body`（1.9）、本文は `.message p` `.content p`（2.1）。大きいほどゆったり
+- 太さ：`font-weight`。900＝極太／700＝太い／500＝やや太い／400＝標準
+
+### 色・余白
+- 色：`:root` の `--accent`（赤）`--black` `--paper`（薄グレー）
+- 余白：各セクションの `padding:clamp(...)`（`.about` `.news` `.partners` `.message` `.cta`）
