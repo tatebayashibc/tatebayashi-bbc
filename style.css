@@ -174,4 +174,4 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 /* TOPでは、スクロール時にヘッダーの黒い帯を出さない（3本線ボタンだけ残す） */
 .top .bar.scrolled{background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
 /* 下の写真を撤去した分の余白 */
-.message{padding-bottom:clamp(100px,11vw,180px)}
+.message{padding-bottom:clamp(130px,11vw,210px)}
