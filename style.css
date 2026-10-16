@@ -195,7 +195,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .btn{gap:10px;padding:12px 22px;font-size:12px;letter-spacing:.16em}
 /* 人生の主人公は → 下へ黒でフェードして活動報告へ */
 .message{padding-bottom:clamp(96px,14vw,180px);background:linear-gradient(to top,var(--black),rgba(10,10,10,0) 260px),linear-gradient(var(--black),rgba(10,10,10,0) 180px),linear-gradient(rgba(10,10,10,.68),rgba(10,10,10,.9)),url(assets/bg-message.jpg) center/cover no-repeat,var(--black)}
-.msg-logo{display: block;margin: 50px auto 0;width: 200px;height: auto;}
+.msg-logo{display: block;margin: 50px auto 0;width: 75px;height: auto;}
 .news{background:var(--black);color:#fff}
 .news .progress{background:rgba(255,255,255,.25)}.news .progress i{background:#fff}
 .news .loading{color:#bbb}
