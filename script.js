@@ -1,6 +1,6 @@
 // ===== 設定：ここのURLを書き換えてください =====
-const INSTAGRAM_URL="https://www.instagram.com/tatebayashi_bbc?dlrf=Ym0xYnQ1MnVuZWh5&utm_source=qr";
-const CONTACT_URL="https://lin.ee/rcBVZ9K";
+const INSTAGRAM_URL="https://www.instagram.com/";
+const CONTACT_URL="https://forms.gle/";
 // メニュー項目（全ページ共通）[日本語, 英語, URL, 外部リンクならtrue]
 const MENU=[
   ["チームについて","About","index.html#about"],
@@ -9,11 +9,12 @@ const MENU=[
   ["パートナー","Partners","partner.html"],
   ["インスタグラム","Instagram",INSTAGRAM_URL,true],
   ["新入生募集","Recruit","recruit.html"],
+  ["練習生募集","Trainee","trainee.html"],
   ["施設","Facility","facility.html"],
   ["お問い合わせ","Contact",CONTACT_URL,true]
 ];
 // 下層ページの順番（ページ下の「NEXT」に使用）
-const PAGES=[["policy.html","Policy","指導方針"],["facility.html","Facility","活動施設"],["recruit.html","Recruit","6期生募集要項"],["results.html","Results","戦績"],["players.html","Players","選手"],["partner.html","Partners","協賛・パートナーズ"],["news.html","News","活動報告・お知らせ"]];
+const PAGES=[["policy.html","Policy","指導方針"],["facility.html","Facility","活動施設"],["recruit.html","Recruit","6期生募集要項"],["trainee.html","Trainee","練習生募集"],["results.html","Results","戦績"],["players.html","Players","選手"],["partner.html","Partners","協賛・パートナーズ"],["news.html","News","活動報告・お知らせ"]];
 // ================================================
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const br=s=>esc(s).split('\n').join('<br>'),ext=u=>u?' target="_blank" rel="noopener"':'';

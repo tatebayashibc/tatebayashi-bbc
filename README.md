@@ -135,3 +135,10 @@ GitHubで `style.css` を開き、鉛筆アイコンで編集 → Commit。フ�
 | 活動報告一覧 | news-page.jpg | body-news.jpg |
 - 活動報告の記事ページは、その記事の `image`（サムネイル）が自動でタイトル背景になります。
 - 本文の背景は、写真が無いときは黒です。写真の上には黒い膜がかかり、文字は白になります。
+
+## 練習生募集ページ（trainee.html / trainee.css）
+- メニュー「練習生募集」から開きます。ページ専用のCSSは `trainee.css`（他のページには影響しません）
+- 写真（assets に入れる。無いときは黒＋数字のデザインで表示されます）：
+  `trainee.jpg`（最初の大きな写真）/ `trainee-1.jpg` `trainee-2.jpg` `trainee-3.jpg`（魅力の3枚・横長4:3）/ `trainee-next.jpg`（入団・背番号の背景）/ `trainee-cta.jpg`（最後の背景）
+- 問い合わせボタンのリンク先は `script.js` の `CONTACT_URL`。未設定（初期値のまま）の間は、ボタンの下に注意書きが出ます
+- 料金・活動日・文章は `trainee.html` の該当箇所を書き換えます
