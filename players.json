@@ -94,7 +94,7 @@
   "grade": 1,
   "no": 90,
   "name": "F.K.",
-  "pos": "１０小クラブ（館林））",
+  "pos": "１０小クラブ（館林）",
   "photo": "assets/fuma.jpg"
  },
  {
@@ -115,14 +115,14 @@
   "grade": 2,
   "no": 12,
   "name": "K.T.",
-  "pos": "",
+  "pos": "山前スピリッツ",
   "photo": "assets/koki.jpg"
  },
  {
   "grade": 2,
   "no": 13,
   "name": "K.I.",
-  "pos": "",
+  "pos": "山前スピリッツ",
   "photo": "assets/keito.jpg"
  },
  {
@@ -134,7 +134,7 @@
  },
  {
   "grade": 2,
-  "no": 30,
+  "no": 33,
   "name": "K.O.",
   "pos": "未所属",
   "photo": "assets/kousei.jpg"
